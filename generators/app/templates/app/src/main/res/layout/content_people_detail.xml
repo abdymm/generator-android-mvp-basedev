@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.abdymalikmulky.templates.app.ui.people.detail.PeopleDetailActivity"
+    tools:showIn="@layout/activity_people_detail">
+
+    <TextView
+        android:id="@+id/detail_people_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="1472342384-1"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center"
+        android:foregroundGravity="center"
+        android:textSize="28sp"/>
+
+    <TextView
+        android:id="@+id/detail_people_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Abdy Malik Mulky"
+        android:layout_marginTop="14dp"
+        app:layout_constraintTop_toBottomOf="@+id/detail_people_id"
+        app:layout_constraintStart_toStartOf="@+id/detail_people_id"
+        android:layout_marginStart="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/detail_people_id"
+        android:layout_marginEnd="8dp"
+        android:gravity="center"
+        android:foregroundGravity="center"
+        android:textSize="20sp"/>
+
+</android.support.constraint.ConstraintLayout>

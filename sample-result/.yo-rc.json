@@ -1,0 +1,17 @@
+{
+  "generator-node": {
+    "promptValues": {
+      "authorName": "abdymalikmulky",
+      "authorEmail": "me@abdymalikmulky.com",
+      "authorUrl": "abdymm"
+    }
+  },
+  "generator-android-mvp-basedev": {
+    "promptValues": {
+      "name": "templates",
+      "targetSdk": 26,
+      "minSdk": 19,
+      "domain": "abdymalikmulky.com"
+    }
+  }
+}
