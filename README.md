@@ -31,7 +31,7 @@ The Stack :
 First, install [Yeoman](http://yeoman.io) and [npm](https://www.npmjs.com/) (we assume you have pre-installed [node.js](https://nodejs.org/)).
 
 
-###Online
+### Online
 
 Then, install generator-android-mvp-basedev using [npm](https://www.npmjs.com/) (we assume you have pre-installed [node.js](https://nodejs.org/)).
 
@@ -46,7 +46,7 @@ Then generate your new project:
 yo android-mvp-basedev
 ```
 
-###Offline
+### Offline
 
 
 First, clone this repository
