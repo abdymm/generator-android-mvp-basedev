@@ -10,7 +10,7 @@ In this repository I create generator for android development, actually this is 
 I built this android dev template with offline first approach [Google IO 2016] (https://www.youtube.com/watch?v=70WqJxymPr8&t=2s) and inspired by this [Android Architecture] (https://github.com/googlesamples/android-architecture) and this [Android Job Queue] (https://github.com/yigit/android-priority-jobqueue).
 
 
-The Stack :
+#### The Stack :
 
 
 - **Network** : [Retrofit](http://square.github.io/retrofit/) 
@@ -25,6 +25,11 @@ The Stack :
 - **Memory Leak Detector** : [LeakCanary](https://github.com/square/leakcanary)
 - **ORM Database** : [DBFlow](https://github.com/Raizlabs/DBFlow)
 
+#### Soon i will add :
+
+- **Dependency Injection** : [Dagger 2](https://google.github.io/dagger/)
+- **ReactiveX** : [RxJava](https://github.com/ReactiveX/RxJava) & [RxAndroid](https://github.com/ReactiveX/RxAndroid)
+- **UnitTest** & **UI Test**
 
 ## How it works
 
@@ -61,7 +66,13 @@ we assume you have already install Yeoman and npm, now enter on repository that 
 npm link
 ```
 
-That will install your project dependencies and symlink a global module to your local file. After npm is done, you'll be able to call `yo android-mvp-basedev` without `generator` and you should see the this.log, defined earlier, rendered in the terminal. Congratulations, you just built your first generator!
+That will install your project dependencies and symlink a global module to your local file. After npm is done, you'll be able to call 
+
+```
+yo android-mvp-basedev
+``` 
+
+without `generator` and you should see the `this.log`, defined earlier, rendered in the terminal. Congratulations, you just built your first generator!
 
 
 
