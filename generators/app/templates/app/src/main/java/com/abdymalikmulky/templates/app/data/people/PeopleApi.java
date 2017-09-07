@@ -1,6 +1,6 @@
-package com.abdymalikmulky.templates.app.data.people;
+package <%= appPackage %>.app.data.people;
 
-import com.abdymalikmulky.templates.util.EndpointUtil;
+import <%= appPackage %>.util.EndpointUtil;
 
 import java.util.List;
 

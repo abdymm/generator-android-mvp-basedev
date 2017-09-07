@@ -1,4 +1,4 @@
-package com.abdymalikmulky.templates.util;
+package <%= appPackage %>.util;
 
 import java.text.DateFormat;
 import java.text.ParseException;

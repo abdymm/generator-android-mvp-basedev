@@ -1,13 +1,13 @@
-package com.abdymalikmulky.templates.app.ui.people.detail;
+package <%= appPackage %>.app.ui.people.detail;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.widget.TextView;
 
-import com.abdymalikmulky.templates.R;
-import com.abdymalikmulky.templates.app.data.people.People;
-import com.abdymalikmulky.templates.util.ConstantsUtil;
+import <%= appPackage %>.R;
+import <%= appPackage %>.app.data.people.People;
+import <%= appPackage %>.util.ConstantsUtil;
 
 import org.parceler.Parcels;
 

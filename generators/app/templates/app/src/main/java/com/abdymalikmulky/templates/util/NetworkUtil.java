@@ -1,4 +1,4 @@
-package com.abdymalikmulky.templates.util;
+package <%= appPackage %>.util;
 
 import android.content.Context;
 import android.net.ConnectivityManager;

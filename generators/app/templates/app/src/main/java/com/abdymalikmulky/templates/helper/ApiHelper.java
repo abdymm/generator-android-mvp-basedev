@@ -1,8 +1,8 @@
-package com.abdymalikmulky.templates.helper;
+package <%= appPackage %>.helper;
 
-import com.abdymalikmulky.templates.util.DateTimeUtil;
-import com.abdymalikmulky.templates.util.EndpointUtil;
-import com.abdymalikmulky.templates.util.InterceptorUtil;
+import <%= appPackage %>.util.DateTimeUtil;
+import <%= appPackage %>.util.EndpointUtil;
+import <%= appPackage %>.util.InterceptorUtil;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 

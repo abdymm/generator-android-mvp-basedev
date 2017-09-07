@@ -1,6 +1,6 @@
-package com.abdymalikmulky.templates.app.data.people;
+package <%= appPackage %>.app.data.people;
 
-import com.abdymalikmulky.templates.helper.ApiHelper;
+import <%= appPackage %>.helper.ApiHelper;
 
 import java.util.List;
 

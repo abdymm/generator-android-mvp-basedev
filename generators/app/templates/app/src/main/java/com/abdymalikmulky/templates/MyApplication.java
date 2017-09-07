@@ -1,4 +1,4 @@
-package com.abdymalikmulky.templates;
+package <%= appPackage %>;
 
 import android.app.Application;
 

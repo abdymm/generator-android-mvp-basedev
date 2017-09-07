@@ -29,12 +29,6 @@ module.exports = class extends Generator {
         default: 'abdy.com'
       },
       {
-        name: 'targetSdk',
-        message: 'Target android SDK?',
-        store: true,
-        default: 26 // Android 8.0 (O(7.1+))
-      },
-      {
         name: 'minSdk',
         message: 'Minimum android SDK?',
         store: true,
@@ -44,8 +38,8 @@ module.exports = class extends Generator {
     return this.prompt(prompts).then(props => {
       this.props.appDomain = props.domain;
       this.props.appName = props.name;
-      this.props.appPackage = this._convert_domain_to_package(props.domain) + "." + props.name;
-      this.props.appTargetSdkVersion = props.targetSdk;
+      this.props.appSimpleName = this._get_simple_name(props.name);
+      this.props.appPackage = this._convert_domain_to_package(props.domain) + "." + this.props.appSimpleName;
       this.props.appMinSdkVersion = props.minSdk;
     });
   }
@@ -77,6 +71,7 @@ module.exports = class extends Generator {
     this.fs.copy(appPath + 'app/src/main/res', 'app/src/main/res');
 
     this.fs.copyTpl(appPath + 'README.md', 'README.md', this.props);
+    this.fs.copyTpl(appPath + 'build.gradle', 'build.gradle', this.props);
     this.fs.copyTpl(appPath + 'app/build.gradle', 'app/build.gradle', this.props);
     this.fs.copyTpl(appPath + 'app/src/main/AndroidManifest.xml', 'app/src/main/AndroidManifest.xml', this.props);
     this.fs.copyTpl(appPath + 'app/src/main/java/com/abdymalikmulky/templates', 'app/src/main/java/' + packageDir, this.props);
@@ -98,6 +93,10 @@ module.exports = class extends Generator {
       }
     }
     return packageName;
+  }
+
+  _get_simple_name(name) {
+    return name.toLowerCase().replace(/\s/g,'');
   }
 
 };

@@ -1,4 +1,4 @@
-package com.abdymalikmulky.templates.app.ui.people.main;
+package <%= appPackage %>.app.ui.people.main;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
@@ -7,8 +7,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.abdymalikmulky.templates.R;
-import com.abdymalikmulky.templates.app.data.people.People;
+import <%= appPackage %>.R;
+import <%= appPackage %>.app.data.people.People;
 
 import java.util.List;
 
@@ -48,7 +48,7 @@ class PeopleAdapter extends RecyclerView.Adapter<PeopleAdapter.ViewHolder> {
 
     public PeopleAdapter(List<People> peoples, PeopleContract.View peopleView) {
         this.peoples = peoples;
-        peopleView = peopleView;
+        this.peopleView = peopleView;
     }
 
     @Override

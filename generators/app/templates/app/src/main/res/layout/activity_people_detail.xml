@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.abdymalikmulky.templates.app.ui.people.detail.PeopleDetailActivity">
+    tools:context="<%= appPackage %>.app.ui.people.detail.PeopleDetailActivity">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"

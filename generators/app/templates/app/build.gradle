@@ -4,7 +4,7 @@ android {
     compileSdkVersion rootProject.ext.compileSdkVersion
     buildToolsVersion rootProject.ext.buildToolsVersion
     defaultConfig {
-        applicationId "com.abdymalikmulky.templates"
+        applicationId "<%= appPackage %>"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
@@ -69,9 +69,6 @@ dependencies {
 
     //Debug Db
     debugImplementation "com.amitshekhar.android:debug-db:$rootProject.dbDebugVersion"
-
-    //Debug Memory
-    debugImplementation "com.squareup.leakcanary:leakcanary-android:$rootProject.leakCanaryVersion"
 
     testImplementation 'junit:junit:4.12'
     androidTestImplementation "com.android.support:support-annotations:$rootProject.supportLibraryVersion"

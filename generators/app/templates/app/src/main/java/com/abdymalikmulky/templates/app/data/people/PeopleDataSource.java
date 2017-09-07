@@ -1,4 +1,4 @@
-package com.abdymalikmulky.templates.app.data.people;
+package <%= appPackage %>.app.data.people;
 
 import java.util.List;
 

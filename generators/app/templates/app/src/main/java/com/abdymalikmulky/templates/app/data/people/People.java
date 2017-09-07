@@ -1,6 +1,6 @@
-package com.abdymalikmulky.templates.app.data.people;
+package <%= appPackage %>.app.data.people;
 
-import com.abdymalikmulky.templates.app.data.DatabaseConfig;
+import <%= appPackage %>.app.data.DatabaseConfig;
 import com.raizlabs.android.dbflow.annotation.Column;
 import com.raizlabs.android.dbflow.annotation.PrimaryKey;
 import com.raizlabs.android.dbflow.annotation.Table;
@@ -35,5 +35,13 @@ public class People extends BaseModel {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    @Override
+    public String toString() {
+        return "People{" +
+                "id='" + id + '\'' +
+                ", name='" + name + '\'' +
+                '}';
     }
 }

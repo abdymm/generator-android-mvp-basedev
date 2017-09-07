@@ -1,4 +1,4 @@
-package com.abdymalikmulky.templates.app;
+package <%= appPackage %>.app;
 
 public interface BasePresenter {
 

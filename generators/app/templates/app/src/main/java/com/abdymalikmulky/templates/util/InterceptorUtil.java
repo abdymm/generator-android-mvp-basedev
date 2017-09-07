@@ -1,4 +1,4 @@
-package com.abdymalikmulky.templates.util;
+package <%= appPackage %>.util;
 
 import okhttp3.Interceptor;
 import okhttp3.logging.HttpLoggingInterceptor;

@@ -1,7 +1,9 @@
-package com.abdymalikmulky.templates.app.data.people;
+package <%= appPackage %>.app.data.people;
 
-import com.abdymalikmulky.templates.MyApplication;
-import com.abdymalikmulky.templates.util.NetworkUtil;
+import android.content.Context;
+
+import <%= appPackage %>.MyApplication;
+import <%= appPackage %>.util.NetworkUtil;
 
 import java.util.List;
 
@@ -14,7 +16,11 @@ public class PeopleRepo implements PeopleDataSource {
     private PeopleLocal peopleLocal;
     private PeopleRemote peopleRemote;
 
-    public PeopleRepo(PeopleLocal peopleLocal, PeopleRemote peopleRemote) {
+    private Context context;
+
+    public PeopleRepo(Context context, PeopleLocal peopleLocal, PeopleRemote peopleRemote) {
+        this.context = context;
+
         this.peopleLocal = peopleLocal;
         this.peopleRemote = peopleRemote;
     }
@@ -22,7 +28,7 @@ public class PeopleRepo implements PeopleDataSource {
     @Override
     public void load(final LoadCallback callback) {
         //Check if network is available
-        if(NetworkUtil.isNetworkAvailable(MyApplication.getInstance())) {
+        if(NetworkUtil.isNetworkAvailable(context)) {
             peopleRemote.load(new LoadCallback() {
                 @Override
                 public void onLoaded(List<People> peoples) {

@@ -1,4 +1,4 @@
-package com.abdymalikmulky.templates.app.data.people;
+package <%= appPackage %>.app.data.people;
 
 import com.raizlabs.android.dbflow.sql.language.SQLite;
 

@@ -1,4 +1,4 @@
-package com.abdymalikmulky.templates.app.ui.people.main;
+package <%= appPackage %>.app.ui.people.main;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,13 +8,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
-import com.abdymalikmulky.templates.R;
-import com.abdymalikmulky.templates.app.data.people.People;
-import com.abdymalikmulky.templates.app.data.people.PeopleLocal;
-import com.abdymalikmulky.templates.app.data.people.PeopleRemote;
-import com.abdymalikmulky.templates.app.data.people.PeopleRepo;
-import com.abdymalikmulky.templates.app.ui.people.detail.PeopleDetailActivity;
-import com.abdymalikmulky.templates.util.ConstantsUtil;
+import <%= appPackage %>.R;
+import <%= appPackage %>.app.data.people.People;
+import <%= appPackage %>.app.data.people.PeopleLocal;
+import <%= appPackage %>.app.data.people.PeopleRemote;
+import <%= appPackage %>.app.data.people.PeopleRepo;
+import <%= appPackage %>.app.ui.people.detail.PeopleDetailActivity;
+import <%= appPackage %>.util.ConstantsUtil;
 
 import org.parceler.Parcels;
 
@@ -23,6 +23,7 @@ import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import timber.log.Timber;
 
 public class PeopleActivity extends AppCompatActivity implements PeopleContract.View {
     //Repo
@@ -57,7 +58,7 @@ public class PeopleActivity extends AppCompatActivity implements PeopleContract.
         //Init Repo
         peopleLocal = new PeopleLocal();
         peopleRemote = new PeopleRemote();
-        peopleRepo = new PeopleRepo(peopleLocal, peopleRemote);
+        peopleRepo = new PeopleRepo(getApplicationContext(), peopleLocal, peopleRemote);
 
         //Init Presenter
         peoplePresenter = new PeoplePresenter(this, peopleRepo);
@@ -93,6 +94,7 @@ public class PeopleActivity extends AppCompatActivity implements PeopleContract.
     @Override
     public void shows(List<People> peoples) {
         this.peoples = peoples;
+        Timber.d("PeoplesData %s", peoples.toString());
         peopleAdapter.refresh(this.peoples);
     }
 

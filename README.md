@@ -25,7 +25,7 @@ I built this android dev template with offline first approach [Google IO 2016] (
 - **Memory Leak Detector** : [LeakCanary](https://github.com/square/leakcanary)
 - **ORM Database** : [DBFlow](https://github.com/Raizlabs/DBFlow)
 
-#### Soon i will add :
+#### *Soon i will add* :
 
 - **Dependency Injection** : [Dagger 2](https://google.github.io/dagger/)
 - **ReactiveX** : [RxJava](https://github.com/ReactiveX/RxJava) & [RxAndroid](https://github.com/ReactiveX/RxAndroid)

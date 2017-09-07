@@ -1,8 +1,8 @@
-package com.abdymalikmulky.templates.app.ui.people.main;
+package <%= appPackage %>.app.ui.people.main;
 
-import com.abdymalikmulky.templates.app.BasePresenter;
-import com.abdymalikmulky.templates.app.BaseView;
-import com.abdymalikmulky.templates.app.data.people.People;
+import <%= appPackage %>.app.BasePresenter;
+import <%= appPackage %>.app.BaseView;
+import <%= appPackage %>.app.data.people.People;
 
 import java.util.List;
 

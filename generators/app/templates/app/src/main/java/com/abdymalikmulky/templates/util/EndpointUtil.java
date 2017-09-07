@@ -1,4 +1,4 @@
-package com.abdymalikmulky.templates.util;
+package <%= appPackage %>.util;
 
 
 /**
@@ -8,7 +8,7 @@ package com.abdymalikmulky.templates.util;
 
 public class EndpointUtil {
 
-    public static final String BASE_URL = "http://api.themoviedb.org/3/";
+    public static final String BASE_URL = "http://59b0c58fffff010011b4ef4e.mockapi.io/";
 
     //People
     public static final String GET_PEOPLES = "peoples/";

@@ -1,8 +1,8 @@
-package com.abdymalikmulky.templates.app.ui.people.main;
+package <%= appPackage %>.app.ui.people.main;
 
-import com.abdymalikmulky.templates.app.data.people.People;
-import com.abdymalikmulky.templates.app.data.people.PeopleDataSource;
-import com.abdymalikmulky.templates.app.data.people.PeopleRepo;
+import <%= appPackage %>.app.data.people.People;
+import <%= appPackage %>.app.data.people.PeopleDataSource;
+import <%= appPackage %>.app.data.people.PeopleRepo;
 
 import java.util.List;
 
