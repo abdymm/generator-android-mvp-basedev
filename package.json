@@ -1,8 +1,8 @@
 {
   "name": "generator-android-mvp-basedev",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "android base development with mvp | android-architecture from google approach (https://github.com/googlesamples/android-architecture)",
-  "homepage": "abdymalikmulky.com",
+  "homepage": "http://abdymalikmulky.com",
   "author": {
     "name": "abdymalikmulky",
     "email": "me@abdymalikmulky.com",
@@ -19,7 +19,9 @@
     "repository",
     "google",
     "android-architecture",
-    "yeoman-generator"
+    "yeoman-generator",
+    "offline-first",
+    "job-queue"
   ],
   "devDependencies": {
     "yeoman-test": "^1.6.0",
@@ -32,9 +34,9 @@
     "jest-cli": "^20.0.0"
   },
   "dependencies": {
-    "yeoman-generator": "^1.0.0",
-    "chalk": "^1.1.3",
-    "yosay": "^2.0.0"
+    "yeoman-generator": "1.1.1",
+    "chalk": "2.1.0",
+    "yosay": "2.0.1"
   },
   "jest": {
     "testEnvironment": "node"
