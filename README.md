@@ -5,7 +5,7 @@
 
 > android base development with mvp | android-architecture from google approach (https://github.com/googlesamples/android-architecture)
 
-## What is this ?
+## What is this?
 
 This is a generator ecosystem by [Yeoman](http://yeoman.io/authoring/index.html) thank helps us to kickstart new projects, prescribing best practices and tools to help you stay productive  and of course make our life is easier.
 
@@ -34,7 +34,7 @@ I built this android dev template with offline first approach [Google IO 2016] (
 - **ReactiveX** : [RxJava](https://github.com/ReactiveX/RxJava) & [RxAndroid](https://github.com/ReactiveX/RxAndroid)
 - **UnitTest** & **UI Test**
 
-## How it works
+## How it works?
 
 First, install [Yeoman](http://yeoman.io) and [npm](https://www.npmjs.com/) (we assume you have pre-installed [node.js](https://nodejs.org/)).
 
