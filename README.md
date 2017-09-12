@@ -1,4 +1,7 @@
-# generator-android-mvp-basedev [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
+# generator-android-mvp-basedev [![NPM version][npm-image]][npm-url] [![Dependency Status][daviddm-image]][daviddm-url] 
+
+<!-- [![Build Status][travis-image]][travis-url] -->
+<!-- [![Coverage percentage][coveralls-image]][coveralls-url] -->
 
 > android base development with mvp | android-architecture from google approach (https://github.com/googlesamples/android-architecture)
 
