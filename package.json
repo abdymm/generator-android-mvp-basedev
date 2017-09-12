@@ -1,12 +1,12 @@
 {
   "name": "generator-android-mvp-basedev",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "android base development with mvp | android-architecture from google approach (https://github.com/googlesamples/android-architecture)",
   "homepage": "https://github.com/abdymm/generator-android-mvp-basedev",
   "author": {
     "name": "abdymalikmulky",
     "email": "me@abdymalikmulky.com",
-    "url": "abdymm"
+    "url": "https://github.com/abdymm"
   },
   "files": [
     "generators"
